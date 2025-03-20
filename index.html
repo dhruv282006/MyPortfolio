@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        nav h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        section figure img {
+            width: 300px; /* Adjust the size */
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #1e3c72;
+            transition: transform 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+
+        /* Instagram & Gmail Logo Styling */
+        aside img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* Creative Skills Section */
+        #Skills {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding-top: 20px;
+        }
+        .skill-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .skill-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .skill-card figcaption {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Dhruv's Portfolio</h1>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="Home">
+        <article>
+            <h1>Hi,</h1>
+            <h1>I'm Dhruv</h1>
+            <h1>Web Designer</h1>
+            <button>Contact Me</button>
+            <aside>
+                <a href="https://www.instagram.com">
+                    <img src="instalogo.png" alt="Instagram" style="width: 30px; height: auto; padding: 10px;">
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                    <img src="gmaillogo.png" alt="Gmail" style="width: 30px; height: auto; padding: 13px;">
+                </a>
+            </aside>
+            
+        </article>
+        <figure>
+            <img src="profile.jpg" alt="Profile Photo">
+        </figure>
+    </section>
+    <section id="About">
+        <article>
+            <h2>About Me</h2>
+            <p>Hi, I’m Dhruv Bajaj, a passionate Graphic designer, Web developer And Photographer with a keen eye for detail and a drive to create meaningful work. With a strong foundation in Web developer. I’m always excited to take on new challenges and push the boundaries of creativity.<br>
+
+                    In addition to my freelance work, I am currently a Graphic Coordinator at ISA Vesit, where I collaborate with a talented team to deliver visually engaging materials that support the society branding and communications goals. This role has given me invaluable experience in managing design projects, working within brand guidelines, and ensuring a seamless visual identity across various platforms.<br>
+                    
+                    I believe that great work starts with understanding the needs of the client and the audience. My approach is rooted in collaboration, clear communication, and a commitment to excellence. I strive to deliver solutions that not only meet expectations but exceed them.<br>
+                    
+                    If you’d like to collaborate or learn more about my work, feel free to reach out!</p>
+        </article>
+        <figure>
+            <img src="profileabout.jpg" alt="About Me">
+        </figure>
+    </section>
+    <section id="Skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="c.png" alt="C">
+                <figcaption>C Programming</figcaption>
+            </div>
+            <div class="skill-card">
+                <img src="java.jpg" alt="Java">
+                <figcaption>Java</figcaption>
+            </div>
+            <div class="skill-card">
+                <img src="python.jpg" alt="Python">
+                <figcaption>Python</figcaption>
+            </div>
+            <div class="skill-card">
+                <img src="ds.jpg" alt="Data Structures">
+                <figcaption>Data Structures in C</figcaption>
+            </div>
+            <div class="skill-card">
+                <img src="sql.jpg" alt="SQL">
+                <figcaption>SQL</figcaption>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="Contacts">
+        <h2>Contacts</h2>
+        <p>Instagram: <a href="https://www.instagram.com/dhruvbajaj_28/">@dhruvbajaj_28</a></p>
+        <p>Email: <a href="mailto:2023.dhruv.bajaj@ves.ac.in">2023.dhruv.bajaj@ves.ac.in</a></p>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
